@@ -22,5 +22,8 @@ export const theme = {
       xhuge: '6.2rem',
     },
   },
+  media: {
+    ltemedium: '(max-width: 768px)',
+  },
   spacings: {},
 };
