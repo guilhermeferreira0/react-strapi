@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<MenuLink /> Should render a snapshot 1`] = `
+.c0 {
+  display: block;
+  text-decoration: none;
+  font-size: 1.6rem;
+  padding: 1.6rem;
+  color: black;
+  position: relative;
+  scale: 1;
+  transition: scale 0.5s ease-in-out;
+}
+
+.c0::after {
+  content: '';
+  position: absolute;
+  bottom: 0.75rem;
+  left: 50%;
+  width: 0%;
+  height: 0.2rem;
+  background-color: #dc143c;
+  transition: all 0.5s ease-in-out;
+}
+
+.c0:hover::after {
+  left: 25%;
+  width: 50%;
+}
+
+.c0:hover {
+  scale: 1.1;
+}
+
+@media (max-width: 768px) {
+  .c0:hover::after {
+    left: 20.5%;
+    width: 50%;
+  }
+}
+
+<a
+  class="c0"
+  href="https://localhost"
+  target="_blank"
+>
+  Children
+</a>
+`;
