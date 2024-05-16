@@ -27,7 +27,7 @@ describe('<NavLinks />', () => {
   // });
 
   it('Should match snapshot', () => {
-    renderTheme(<NavLinks Links={mock} />);
-    expect(screen.queryAllByRole('link')).toMatchSnapshot();
+    const { container } = renderTheme(<NavLinks Links={mock} />);
+    expect(container.firstChild).toMatchSnapshot();
   });
 });
