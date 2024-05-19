@@ -37,14 +37,14 @@ exports[`<NavLinks /> Should match snapshot 1`] = `
   scale: 1.1;
 }
 
-@media (max-width: 768px) {
+@media (max-width:768px) {
   .c0 {
     flex-flow: column wrap;
     align-content: center;
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width:768px) {
   .c1:hover::after {
     left: 20.5%;
     width: 50%;
@@ -52,6 +52,7 @@ exports[`<NavLinks /> Should match snapshot 1`] = `
 }
 
 <nav
+  aria-label="Main menu"
   class="c0"
 >
   <a

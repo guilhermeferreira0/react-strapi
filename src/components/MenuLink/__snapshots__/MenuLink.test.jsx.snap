@@ -32,7 +32,7 @@ exports[`<MenuLink /> Should render a snapshot 1`] = `
   scale: 1.1;
 }
 
-@media (max-width: 768px) {
+@media (max-width:768px) {
   .c0:hover::after {
     left: 20.5%;
     width: 50%;
