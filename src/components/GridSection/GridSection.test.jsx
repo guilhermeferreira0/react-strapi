@@ -8,4 +8,11 @@ describe('<GridSection />', () => {
     const { container } = renderTheme(<GridSection {...mock} />);
     expect(container).toMatchSnapshot();
   });
+
+  it('Should render grid withou background', () => {
+    const { container } = renderTheme(
+      <GridSection {...mock} background={undefined} />,
+    );
+    expect(container).toMatchSnapshot();
+  });
 });
