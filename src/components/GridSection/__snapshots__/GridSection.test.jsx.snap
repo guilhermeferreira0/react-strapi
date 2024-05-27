@@ -78,11 +78,11 @@ exports[`<GridSection /> Should render grid content 1`] = `
         >
           My grid
         </h3>
-        <p
+        <div
           class="c5 c6"
         >
           lorem ipsum dolor
-        </p>
+        </div>
         <div
           class="c7"
         >
@@ -94,11 +94,11 @@ exports[`<GridSection /> Should render grid content 1`] = `
             >
               Teste 1
             </h1>
-            <p
+            <div
               class="c5 c6"
             >
               lorem ipsum dolor sit amet consecteturadipisicnt esse ut atque doloreis nobis commoix maxime distinctin veritatus und reprehenderet mineus ad dolores privident maiorsds
-            </p>
+            </div>
           </div>
           <div
             class="c8"
@@ -108,11 +108,11 @@ exports[`<GridSection /> Should render grid content 1`] = `
             >
               Teste 2
             </h1>
-            <p
+            <div
               class="c5 c6"
             >
               lorem ipsum dolor sit amet consecteturadipisicnt esse ut atque doloreis nobis commoix maxime distinctin veritatus und reprehenderet mineus ad dolores privident maiorsds
-            </p>
+            </div>
           </div>
           <div
             class="c8"
@@ -122,11 +122,11 @@ exports[`<GridSection /> Should render grid content 1`] = `
             >
               Teste 3
             </h1>
-            <p
+            <div
               class="c5 c6"
             >
               lorem ipsum dolor sit amet consecteturadipisicnt esse ut atque doloreis nobis commoix maxime distinctin veritatus und reprehenderet mineus ad dolores privident maiorsds
-            </p>
+            </div>
           </div>
         </div>
       </div>
@@ -213,11 +213,11 @@ exports[`<GridSection /> Should render grid withou background 1`] = `
         >
           My grid
         </h3>
-        <p
+        <div
           class="c5 c6"
         >
           lorem ipsum dolor
-        </p>
+        </div>
         <div
           class="c7"
         >
@@ -229,11 +229,11 @@ exports[`<GridSection /> Should render grid withou background 1`] = `
             >
               Teste 1
             </h1>
-            <p
+            <div
               class="c5 c6"
             >
               lorem ipsum dolor sit amet consecteturadipisicnt esse ut atque doloreis nobis commoix maxime distinctin veritatus und reprehenderet mineus ad dolores privident maiorsds
-            </p>
+            </div>
           </div>
           <div
             class="c8"
@@ -243,11 +243,11 @@ exports[`<GridSection /> Should render grid withou background 1`] = `
             >
               Teste 2
             </h1>
-            <p
+            <div
               class="c5 c6"
             >
               lorem ipsum dolor sit amet consecteturadipisicnt esse ut atque doloreis nobis commoix maxime distinctin veritatus und reprehenderet mineus ad dolores privident maiorsds
-            </p>
+            </div>
           </div>
           <div
             class="c8"
@@ -257,11 +257,11 @@ exports[`<GridSection /> Should render grid withou background 1`] = `
             >
               Teste 3
             </h1>
-            <p
+            <div
               class="c5 c6"
             >
               lorem ipsum dolor sit amet consecteturadipisicnt esse ut atque doloreis nobis commoix maxime distinctin veritatus und reprehenderet mineus ad dolores privident maiorsds
-            </p>
+            </div>
           </div>
         </div>
       </div>
