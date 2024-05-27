@@ -8,7 +8,7 @@ const menuVisible = (theme) => css`
   opacity: 1;
 `;
 
-export const Container = styled.div`
+export const Container = styled.nav`
   ${({ theme, visible }) => css`
     position: fixed;
     z-index: 5;
@@ -17,7 +17,7 @@ export const Container = styled.div`
     right: 0;
     bottom: 0;
     width: 100%;
-    height: 100%;
+    height: 14.5%;
     border-bottom: ${theme.colors.mediumGray};
     background: ${theme.colors.white};
     transition: all 0.6s ease-in-out;
@@ -93,7 +93,5 @@ export const Button = styled.button`
     align-items: center;
     justify-content: center;
   }
-
-
 `}
 `;

@@ -13,7 +13,7 @@ export default {
 
 export const Template = (args) => {
   return (
-    <div style={{ height: '400vh' }}>
+    <div>
       <h1>Lorem ipsum dolor sit</h1>
       <p>
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum odit
