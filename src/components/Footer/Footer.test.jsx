@@ -6,7 +6,7 @@ describe('<Footer />', () => {
   it('Should render', () => {
     const { container } = renderTheme(
       <Footer
-        html="
+        footerHtml="
       <h1>Testando</h1>"
       />,
     );
