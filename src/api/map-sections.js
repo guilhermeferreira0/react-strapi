@@ -14,10 +14,10 @@ export const mapSections = (sections = []) => {
   });
 };
 
-export const mapSectionTwoColumns = (section) => {
+export const mapSectionTwoColumns = (section = {}) => {
   const {
     __component: component = '',
-    title,
+    title = '',
     description: text = '',
     image: { url: srcImage = '' } = '',
     metadata: { background = false, section_id: sectionId = '' } = '',
@@ -32,8 +32,20 @@ export const mapSectionTwoColumns = (section) => {
   };
 };
 
-export const mapSectionContent = (section) => {
-  return section;
+export const mapSectionContent = (section = {}) => {
+  const {
+    __component: component = '',
+    title = '',
+    content: html = '',
+    metadata: { background = false, section_id: sectionId = '' } = '',
+  } = section;
+  return {
+    component,
+    title,
+    background,
+    sectionId,
+    html,
+  };
 };
 
 export const mapSectionGrid = (section) => {

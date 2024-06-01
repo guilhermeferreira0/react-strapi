@@ -1,4 +1,8 @@
-import { mapSectionTwoColumns, mapSections } from './map-sections';
+import {
+  mapSectionContent,
+  mapSectionTwoColumns,
+  mapSections,
+} from './map-sections';
 
 describe('Map-sections', () => {
   it('Should render predefined section if no data', () => {
@@ -7,11 +11,12 @@ describe('Map-sections', () => {
   });
 
   it('Should map section two columns', () => {
-    const data = mapSectionTwoColumns({});
+    const data = mapSectionTwoColumns();
     expect(data.background).toBe(false);
     expect(data.component).toBe('');
     expect(data.sectionId).toBe('');
     expect(data.srcImage).toBe('');
+    expect(data.title).toBe('');
   });
 
   it('Should map section two columns insert values', () => {
@@ -61,5 +66,34 @@ describe('Map-sections', () => {
     );
     expect(data.text).toBe('To wrap up.');
     expect(data.title).toBe('January brings us Firefox 85');
+  });
+
+  it('Should map section content', () => {
+    const data = mapSectionContent();
+    expect(data.background).toBe(false);
+    expect(data.component).toBe('');
+    expect(data.sectionId).toBe('');
+    expect(data.title).toBe('');
+  });
+
+  it('Should map section content insert values', () => {
+    const data = mapSectionContent({
+      __component: 'section.section-content',
+      title: 'news coverage and some surprises',
+      content:
+        '<p>The release of Apple Silicon-based Macs at the end of last year generated.</p>',
+      metadata: {
+        background: true,
+        name: 'intro',
+        section_id: 'intro',
+      },
+    });
+    expect(data.background).toBe(true);
+    expect(data.component).toBe('section.section-content');
+    expect(data.sectionId).toBe('intro');
+    expect(data.title).toBe('news coverage and some surprises');
+    expect(data.html).toBe(
+      '<p>The release of Apple Silicon-based Macs at the end of last year generated.</p>',
+    );
   });
 });
