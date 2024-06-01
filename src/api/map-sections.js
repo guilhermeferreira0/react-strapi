@@ -7,7 +7,14 @@ export const mapSections = (sections = []) => {
       return mapSectionContent(sec);
     }
     if (sec.__component === 'section.section-grid') {
-      return mapSectionGrid(sec);
+      const { text_grid: textGrid = [], image_grid: imageGrid = [] } = sec;
+
+      if (textGrid.length > 0) {
+        return mapTextGrid(sec);
+      }
+      if (imageGrid.length > 0) {
+        return mapImageGrid(sec);
+      }
     }
 
     return sec;
@@ -48,6 +55,52 @@ export const mapSectionContent = (section = {}) => {
   };
 };
 
-export const mapSectionGrid = (section) => {
-  return section;
+export const mapTextGrid = (section = {}) => {
+  const {
+    __component: component = '',
+    title = '',
+    description = '',
+    metadata: { background = false, section_id: sectionId = '' } = '',
+    text_grid: grid = [],
+  } = section;
+  return {
+    component: 'section.section-grid-text',
+    title,
+    background,
+    sectionId,
+    description,
+    grid: grid.map((text) => {
+      const { title = '', description = '' } = text;
+      return {
+        title,
+        description,
+      };
+    }),
+  };
+};
+
+export const mapImageGrid = (section = {}) => {
+  const {
+    __component: component = '',
+    title = '',
+    description = '',
+    metadata: { background = false, section_id: sectionId = '' } = '',
+    image_grid: grid = [],
+  } = section;
+  return {
+    component: 'section.section-grid-image',
+    title,
+    background,
+    sectionId,
+    description,
+    grid: grid.map((img) => {
+      const {
+        image: { alternativeText: altText = '', url: srcImage = '' } = '',
+      } = img;
+      return {
+        altText,
+        srcImage,
+      };
+    }),
+  };
 };
