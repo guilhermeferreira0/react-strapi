@@ -68,7 +68,8 @@
       "!<rootDir>/src/**/*mock*.{js,jsx,ts, tsx}",
       "!<rootDir>/src/styles/*.{js,jsx,ts, tsx}",
       "!<rootDir>/**/stories.{js,jsx,ts, tsx}",
-      "!<rootDir>/node_modules/"
+      "!<rootDir>/node_modules/",
+      "!<rootDir>/src/templates/**/.{js,jsx,ts, tsx}"
     ]
   }
 }

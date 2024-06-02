@@ -68,25 +68,8 @@ describe('Map-sections', () => {
       image: {
         name: 'javascript.svg',
         alternativeText: 'Desenho de pessoas segurando logos do CSS, JS e HTML',
-        caption: 'Desenho de pessoas segurando logos do CSS, JS e HTML',
-        hash: 'javascript_b57bf48cda',
-        ext: '.svg',
-        mime: 'image/svg+xml',
-        size: 30.31,
         url: 'https://res.cloudinary.com/dlizakp2a/image/upload/v1613749289/javascript_b57bf48cda.svg',
-        provider_metadata: {
-          public_id: 'javascript_b57bf48cda',
-          resource_type: 'image',
-        },
-        width: 1030,
-        height: 730,
-        related: ['602fdf2d540c00269e056178', '602fdf2d540c00269e056172'],
-        createdAt: '2021-02-19T15:41:31.808Z',
-        updatedAt: '2021-02-19T15:54:22.590Z',
-        __v: 0,
-        id: '602fdc2b540c00269e05616a',
       },
-      id: '602fdf2d540c00269e056172',
     });
     expect(data.background).toBe(true);
     expect(data.component).toBe('section.section-two-columns');
@@ -144,7 +127,6 @@ describe('Map-sections', () => {
       title: 'My Grid',
       text_grid: [
         {
-          _id: '602fdf2d540c00269e05617c',
           title: 'Teste 1',
           description:
             'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis cum delectus molestias. Atque doloribus nobis laudantium esse ut, non commodi maxime distinctio veritatis unde, reprehenderit minus ad dolores provident maiores.',
